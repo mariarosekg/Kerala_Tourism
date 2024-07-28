@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.nav-links{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link{
+    list-style-type: none;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: rgb(10, 32, 16);
+    font-size: 25px;
+}
+
+.button2 a{
+    text-decoration: none;
+    color: white;
+}
+.button2{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 5px seagreen solid;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#diff{
+    background-color: seagreen;
+}
+.welcome{
+    text-align: center;
+    margin: auto auto;
+    width: 50%;
+    font-size: 2.5rem;
+    color: black;
+    position: relative;
+    z-index: 2;
+}
+
+main{
+    position: relative; 
+    margin: 0;
+    height: 670px;
+    background-image: url('images/heroimage.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+} 
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(154, 210, 156, 0.184); 
+    z-index: 1;
+}
+
+.destinations{
+    margin: 40px 30px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 50px;
+    justify-items: center;
+    margin-bottom: 30px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.item img {
+    width: 400px;
+    max-width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.item h2 {
+    margin-bottom: 20px;
+    font-size: 1.5625rem;
+}
+
+.seemore{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background-color: seagreen;
+    border: 5px seagreen solid;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+
+.seemore a{
+    text-decoration: none;
+    color: white;
+}
+
+.aboutkerala {
+    display: flex; 
+    flex-direction: row-reverse;
+    gap: 20px; 
+    margin: 20px;
+}
+.headingkerala{
+    display: flex;
+    justify-content: right;
+    margin: 30px 30px;
+    font-size: 3.125rem;
+    text-decoration: underline;
+    text-decoration-color: seagreen;
+    text-underline-offset: 15px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    width: 350px;
+    max-width: 500px; 
+    box-sizing: border-box;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 10px;
+    margin: 80px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+input {
+    padding:20px;
+    border: none;
+    border-bottom: grey solid 3px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+select{
+    background-color: rgba(174, 178, 177, 0.384);
+    padding: 10px;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+button {
+    background-color: seagreen;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.districts{
+    margin: 40px 30px;
+    text-align: center;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    justify-items: center;
+    margin-bottom: 30px;
+}
+
+.distlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* align-items: flex-start; */
+}
+
+.distlist img {
+    width: 300px;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 300px;
+}
+
+.distlist figcaption{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
