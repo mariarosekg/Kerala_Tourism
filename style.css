@@ -15,6 +15,7 @@ header{
 .nav-links{
     display: flex;
     gap: 1.5rem;
+    align-items: center;
 }
 
 .nav-link{
@@ -27,6 +28,18 @@ header{
     font-size: 25px;
 }
 
+.button3 a{
+    text-decoration: none;
+    color: white;
+}
+.button3{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 5px seagreen solid;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: bolder;
+}
 .button2 a{
     text-decoration: none;
     color: white;
@@ -60,6 +73,7 @@ main{
     background-image: url('images/heroimage.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    max-width: 100%;
     
 } 
 main::before {
@@ -80,7 +94,7 @@ main::before {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 50px;
     justify-items: center;
     margin-bottom: 30px;
@@ -94,15 +108,15 @@ main::before {
 }
 
 .item img {
-    width: 400px;
-    max-width: 400px;
-    height: 300px;
+    width: 350px;
+    max-width: 350px;
+    height: 250px;
     object-fit: cover;
 }
 
 .item h2 {
     margin-bottom: 20px;
-    font-size: 1.5625rem;
+    font-size: 20px;
 }
 
 .seemore{
@@ -132,10 +146,14 @@ main::before {
     display: flex;
     justify-content: right;
     margin: 30px 30px;
-    font-size: 3.125rem;
+    font-size: 35px;
     text-decoration: underline;
     text-decoration-color: seagreen;
     text-underline-offset: 15px;
+}
+
+.left-content{
+    font-size: 20px;
 }
 
 .box {
@@ -191,14 +209,16 @@ button {
 }
 
 .districts{
-    margin: 40px 30px;
+    background-color: rgb(221, 235, 230);
     text-align: center;
+    padding: 20px 0px;
 }
 
 .grid1 {
+    margin: 40px 30px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px 70px;
     justify-items: center;
     margin-bottom: 30px;
 }
@@ -211,9 +231,9 @@ button {
 }
 
 .distlist img {
-    width: 300px;
-    max-width: 300px;
-    height: 300px;
+    width: 200px;
+    max-width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 300px;
 }
@@ -221,6 +241,152 @@ button {
 .distlist figcaption{
     text-align: center;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 18px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.hamburger {
+    display: none;
+  }
+
+
+/* RESPONSIVE WEBDESIGNING */
+
+@media only screen and (max-width: 950px) {
+    .nav-links {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+    }
+    .hamburger .line {
+        font-size: 25px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    .nav-links a{
+        font-size: 20px;
+    }
+    .welcome{
+        font-size: 33px;
+        width: 80%;
+    }
+    .button2{
+        font-size: 15px;        
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .nav-links a{
+        font-size: 18px;
+    }
+    .welcome{
+        font-size: 33px;
+        width: 80%;
+    }
+    .button2{
+        font-size: 15px;        
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+    .aboutkerala {
+        flex-direction: column;
+        align-items: center;
+        }
+    .headingkerala{
+        justify-content: start;
+        }
+    .left-content{
+        text-align: justify;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .button2{
+        font-size: 15px;        
+    }
+    main{
+        height: 500px;
+    } 
+    .welcome{
+        font-size: 30px;
+        width: 80%;
+    }
+    .left-content{
+        text-align: justify;
+    }
+    .aboutkerala {
+        flex-direction: column;
+        align-items: center;
+        }
+    .headingkerala{
+        justify-content: start;
+        
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+}
+@media only screen and (max-width: 480px) {
+    header{
+        img{
+            height: 90px;
+            width: 120px;
+        }
+    }
+    .welcome{
+        font-size: 20px;
+        width: 100%;
+    }
+    
+    .button2{
+        font-size: 10px;
+        background-color: seagreen;
+        border: 3px solid darkgreen;
+        
+    }
+    main{
+        height: 400px;
+    } 
+    
+    .left-content{
+        text-align: justify;
+    }
+
+    .keralam{
+        background-color: rgb(221, 229, 227);
+        padding: 20px 0px;
+    }
+
+    .aboutkerala {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; 
+        margin: 20px;
+    }
+    .headingkerala{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 30px;
+        font-size: 35px;
+    }
+    .districts{
+        background-color: white;
+    }
+    .grid1 {
+        margin: 20px 0px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px 10px;
+    }
 }
