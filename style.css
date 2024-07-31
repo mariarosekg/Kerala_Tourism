@@ -92,6 +92,11 @@ main::before {
     text-align: center;
 }
 
+.destinations h1{
+    font-size: 35px;
+    text-decoration: underline;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -250,6 +255,7 @@ button {
   }
 
 
+  
 /* RESPONSIVE WEBDESIGNING */
 
 @media only screen and (max-width: 950px) {
@@ -320,6 +326,11 @@ button {
         font-size: 30px;
         width: 80%;
     }
+    .button2{
+        font-size: 10px;
+        background-color: seagreen;
+        border: 3px solid darkgreen;
+        }
     .left-content{
         text-align: justify;
     }
@@ -347,13 +358,16 @@ button {
         font-size: 20px;
         width: 100%;
     }
+
+    .destinations h1{
+        font-size: 30px;
+    }
     
     .button2{
         font-size: 10px;
         background-color: seagreen;
         border: 3px solid darkgreen;
-        
-    }
+        }
     main{
         height: 400px;
     } 
